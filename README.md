@@ -1,2 +1,4 @@
 # FirstRenpyProject
-My first
+Image:
+![alt text](screenshot0001.png)
+
