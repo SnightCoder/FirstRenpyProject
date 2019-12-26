@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 86: end of line expected.
+    space "OK" 1
+               ^
+
+Ren'Py Version: Ren'Py 7.4.0.84
+Thu Dec 26 16:43:34 2019

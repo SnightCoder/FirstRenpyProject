@@ -1,0 +1,1 @@
+{"layout": null, "orientation": "sensorLandscape", "package": "com.fuckup.novel", "include_pil": false, "expansion": false, "name": "Nam", "update_always": true, "source": false, "icon_name": "Nam", "version": "0.1", "update_icons": true, "permissions": ["VIBRATE", "INTERNET"], "numeric_version": "1", "include_sqlite": false, "store": "none"}
