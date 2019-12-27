@@ -26,6 +26,7 @@ image spaceSmile=im.Scale("space smile.png",characterScaleX,characterScaleY)
 image spaceShy=im.Scale("space shy.png",characterScaleX,characterScaleY)
 image spaceWorry=im.Scale("space worry.png",characterScaleX,characterScaleY)
 image spaceLaugh=im.Scale("space laugh.png",characterScaleX,characterScaleY)
+image spaceWow=im.Scale("space wow.png",characterScaleX,characterScaleY)
 
 # The game starts here.
 
@@ -46,7 +47,7 @@ label start:
     show spaceShy at right
     with dissolve
     space "This is my first visual novel project :)"
-    space "I have added this background music named \"upbeat and happy\" is one of my favorite kinds of music"
+    space "I have added this background music named \"upbeat and happy\" is one of my favorite songs"
     space "Do you like this song?"
 
     menu:
@@ -57,12 +58,12 @@ label start:
             space "I'm glad you like it"
         "No":
             hide spaceShy
-            show spaceWorry at right
+            show spaceWow at right
             with dissolve
             space "Oh Okay"
 
     hide spaceLaugh
-    hide spaceWorry
+    hide spaceWow
     show spaceSmile at right
     with dissolve
     space "There are some songs which you can play:"
