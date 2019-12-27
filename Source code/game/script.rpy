@@ -46,6 +46,7 @@ label start:
     show spaceShy at right
     with dissolve
     space "This is my first visual novel project :)"
+    space "I have added this background music named \"upbeat and happy\" is one of my favorite kinds of music"
     space "Do you like this song?"
 
     menu:
@@ -64,7 +65,7 @@ label start:
     hide spaceWorry
     show spaceSmile at right
     with dissolve
-    space "There are some musics you can play:"
+    space "There are some songs which you can play:"
 
     label songmenu:
     menu:
@@ -78,6 +79,7 @@ label start:
             with dissolve
             play music vocal
             pause
+            pause
             jump songmenu
 
         "Time's Battle Theme":
@@ -85,6 +87,7 @@ label start:
             scene Time
             with dissolve
             play music time
+            pause
             pause
             jump songmenu
 
@@ -94,6 +97,7 @@ label start:
             with dissolve
             play music spacem
             pause
+            pause
             jump songmenu
 
         "Nil's Battle Theme":
@@ -101,6 +105,7 @@ label start:
             scene Nil
             with dissolve
             play music nil
+            pause
             pause
             jump songmenu
 
