@@ -34,7 +34,8 @@ label start:
 
     # This begins the game
     #space "[html]"
-    play music mainm
+    #play music mainm
+    play music poolparty
     scene bgs:
         linear 5.0 zoom 1.1
         linear 5.0 zoom 1.0
@@ -47,7 +48,7 @@ label start:
     show spaceShy at right
     with dissolve
     space "This is my first visual novel project :)"
-    space "I have added this background music named \"upbeat and happy\" is one of my favorite songs"
+    space "I have added this background music named \"Pool Party Upbeat\" is one of my favorite songs"
     space "Do you like this song?"
 
     menu:
