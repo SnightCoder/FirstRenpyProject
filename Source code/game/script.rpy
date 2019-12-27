@@ -3,6 +3,14 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+define html="gg"
+
+python:
+    import urllib.request
+    response = urllib.request.urlopen('http://python.org/')
+    html = response.read()
+
+
 image bgs  = im.Scale("bgs.png", 1920, 1080, bilinear=True)
 image Space  = im.Scale("spacemusic.jpg", 1920, 1080, bilinear=True)
 image Time  = im.Scale("bgstime.jpg", 1920, 1080, bilinear=True)
@@ -24,10 +32,15 @@ image spaceLaugh=im.Scale("space laugh.png",characterScaleX,characterScaleY)
 label start:
 
     # This begins the game
+    #space "[html]"
     play music mainm
-    scene bgs
+    scene bgs:
+        linear 5.0 zoom 1.1
+        linear 5.0 zoom 1.0
+        repeat
     with dissolve
     show spaceSmile at right
+    with dissolve
     space "Hello~!!! My name is Space"
     hide spaceSmile
     show spaceShy at right
@@ -55,6 +68,18 @@ label start:
 
     label songmenu:
     menu:
+
+        "Main Menu Lyrical Version":
+            hide spaceSmile
+            scene Vocal:
+                linear 5.0 zoom 1.1
+                linear 5.0 zoom 1.0
+                repeat
+            with dissolve
+            play music vocal
+            pause
+            jump songmenu
+
         "Time's Battle Theme":
             hide spaceSmile
             scene Time
@@ -76,14 +101,6 @@ label start:
             scene Nil
             with dissolve
             play music nil
-            pause
-            jump songmenu
-
-        "Main Menu Lyrical Version":
-            hide spaceSmile
-            scene Vocal
-            with dissolve
-            play music vocal
             pause
             jump songmenu
 
