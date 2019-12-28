@@ -1,92 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 31, in script
-    space "Hello~!!! My name is Space"
-  File "game/script.rpy", line 31, in script
-    space "Hello~!!! My name is Space"
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-Exception: Could not find font u'OpenDyslexic-Regular.otf.ttf'.
+After initialization, but before game start.
+WindowsError: [Error 2] The system cannot find the file specified: 'E:\\Me\\Project  RenPy\\Nam\\game\\saves\\navigation.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\bootstrap.py", line 324, in bootstrap
     renpy.main.main()
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 579, in main
-    run(restart)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 143, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\execution.py", line 922, in run_context
-    context.run()
-  File "game/script.rpy", line 31, in script
-    space "Hello~!!! My name is Space"
-  File "game/script.rpy", line 31, in script
-    space "Hello~!!! My name is Space"
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 671, in execute
-    statement_name("say")
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 45, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 2254, in do_with
-    clear=clear)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 2705, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 3197, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 2097, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 491, in renpy.display.render.render_screen
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\transition.py", line 361, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\screen.py", line 675, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\display\layout.py", line 1127, in render
-    st, at)
-  File "render.pyx", line 166, in renpy.display.render.render
-  File "render.pyx", line 259, in renpy.display.render.render
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\text\text.py", line 1996, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\text\text.py", line 626, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\text\text.py", line 242, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\text\font.py", line 699, in get_font
-    face = load_face(fn)
-  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\text\font.py", line 640, in load_face
-    raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font u'OpenDyslexic-Regular.otf.ttf'.
+  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 535, in main
+    renpy.dump.dump(False)
+  File "C:\Users\Nam\Downloads\renpy-7.3.5-sdk\renpy\dump.py", line 254, in dump
+    os.unlink(args.json_dump)
+WindowsError: [Error 2] The system cannot find the file specified: 'E:\\Me\\Project  RenPy\\Nam\\game\\saves\\navigation.json'
 
 Windows-8-6.2.9200
 Ren'Py 7.4.0.84
 Nam Project 1.0
-Thu Dec 26 20:38:43 2019
+Sat Dec 28 11:00:40 2019

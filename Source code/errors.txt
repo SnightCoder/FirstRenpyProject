@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 86: end of line expected.
-    space "OK" 1
-               ^
+File "game/script.rpy", line 126: end of line expected.
+    with dissolve:
+                 ^
 
 Ren'Py Version: Ren'Py 7.4.0.84
-Thu Dec 26 16:43:34 2019
+Fri Dec 27 20:48:40 2019
